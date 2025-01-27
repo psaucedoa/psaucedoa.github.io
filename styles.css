@@ -58,9 +58,12 @@ a {
 }
 
 p {
-    max-width: 600px;
-    
+    max-width: 600px;   
 }
+
+.fade {
+    mask-image: linear-gradient(180deg, #000 0px, transparent);
+  }
 
 /* Navigation Bar */
 nav {
@@ -121,9 +124,9 @@ nav .nav-links a:hover {
     -webkit-text-stroke-color: black;
     /* backdrop-filter: blur(5px); */
     text-align: center;
+    flex-wrap: wrap;
     font-size: 4rem;
-    margin-bottom: 0;
-    margin-top: 10rem;
+    margin-bottom: 0rem;
     font-family: var(--heading-font);
 }
 
@@ -132,9 +135,11 @@ nav .nav-links a:hover {
     /* -webkit-text-stroke-color: black; */
     /* backdrop-filter: blur(5px); */
     text-align: center;
+    flex-wrap: wrap;
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     font-family: var(--heading-font);
+    color: var(--card-background);
 }
 
 .hero-content p {
@@ -181,8 +186,8 @@ nav .nav-links a:hover {
     color: var(--text-color);
     text-align: center;
     margin-top: 100px;
-    /* margin-bottom: 100px; */
-    min-height: 100vh;
+    margin-bottom: 100px;
+    /* min-height: 100vh; */
     /* padding: 4rem 2rem; */
     display: block;
     width: 100%; /* Ensures the element takes up the full width */
@@ -211,12 +216,12 @@ nav .nav-links a:hover {
 
 .info-content p {
     /* backdrop-filter: blur(5px); */
-    font-size: 1.5rem;
-    margin-top: 0;
     text-align: center;
-    font-family: var(--body-font);
+    flex-wrap: wrap;
+    font-size: 1.25rem;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
+    font-family: var(--body-font);
 }
 
 .info-cards {
@@ -237,7 +242,7 @@ nav .nav-links a:hover {
     color: var(--hero-text-color);
     text-align: center;
     /* margin-bottom: 150px; */
-    padding: 4rem 2rem;
+    margin-bottom: 100px;
 }
 
 .services-content h2 {
@@ -245,6 +250,15 @@ nav .nav-links a:hover {
     font-size: 3rem;
     margin-bottom: 1rem;
     font-family: var(--heading-font);
+}
+
+.services-content p {
+    /* backdrop-filter: blur(5px); */
+    font-size: 1.25rem;
+    margin-top: 0;
+    text-align: center;
+    font-family: var(--body-font);
+    margin: auto;
 }
 
 .services-cards {
@@ -262,29 +276,41 @@ nav .nav-links a:hover {
     background: var(--background-gradient);
 }
 
-.technology h2 {
+.technology h1 {
     text-align: center;
     flex-wrap: wrap;
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 0rem;
     font-family: var(--heading-font);
+}
+
+.technology h2 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    font-family: var(--heading-font);
+    color: var(--card-background);
+    max-width: 600px;
+    margin: auto;
 }
 
 .technology h3 {
     text-align: center;
     flex-wrap: wrap;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin:0 auto;
     margin-bottom: 2rem;
     font-family: var(--heading-font);
-    max-width: 600px;
 }
 
 .technology p {
     /* backdrop-filter: blur(5px); */
     text-align: center;
     flex-wrap: wrap;
-    font-size: 1.0rem;
+    font-size: 1.25rem;
     margin: auto;
     margin-bottom: 2rem;
     font-family: var(--body-font);
@@ -305,30 +331,41 @@ nav .nav-links a:hover {
     background: var(--background-gradient);
 }
 
-.safety h2 {
+.safety h1 {
     text-align: center;
     flex-wrap: wrap;
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 0rem;
     font-family: var(--heading-font);
-    /* max-width: 600px; */
+}
+
+.safety h2 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    font-family: var(--heading-font);
+    color: var(--card-background);
+    max-width: 600px;
+    margin: auto;
 }
 
 .safety h3 {
     text-align: center;
     flex-wrap: wrap;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin:0 auto;
     margin-bottom: 2rem;
     font-family: var(--heading-font);
-    max-width: 600px;
 }
 
 .safety p {
     /* backdrop-filter: blur(5px); */
     text-align: center;
     flex-wrap: wrap;
-    font-size: 1.0rem;
+    font-size: 1.25rem;
     margin: auto;
     margin-bottom: 2rem;
     font-family: var(--body-font);
@@ -481,8 +518,6 @@ footer {
     align-items: center; /* Center vertically */
     width: 100%; /* Ensures the element takes up the full width */
 }
-
-
 
 footer p {
     margin: 0.5rem 0;
