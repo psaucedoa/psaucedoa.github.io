@@ -14,6 +14,8 @@
         <div class="logo">
             <h1>Dirt Robotics <small>Inc.</small></h1>
         </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
         <ul class="nav-links">
             <li><a href="index.html#home">Home</a></li>
             <li><a href="#services">Services</a></li>
@@ -114,5 +116,12 @@
             <p>| Third-party trademarks are the property of their respective owners and are used for identification purposes only.</p>
             <p>| Contact us at: info@dirtrobotics.com</p>
     </footer>
+
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
