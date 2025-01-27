@@ -289,10 +289,21 @@ nav .nav-links a:hover {
 }
 
 .about p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 500px;
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 1.0rem;
+    margin:0 auto;
+    margin-bottom: 2rem;
     font-family: var(--body-font);
+}
+
+.about img {
+    width: 800px; /* Makes the image fill the card width */
+    height: 500px; /* Maintains the image's aspect ratio */
+    border-radius: 10px 10px 10px 10px; /* Rounds the top corners of the image */
+    display: block; /* Removes extra space below the image */   
+    margin: auto;
 }
 
 /* Contact Section */
@@ -334,5 +345,6 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+    font-size: 0.75rem;
     font-family: var(--body-font);
 }
