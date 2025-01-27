@@ -327,8 +327,8 @@ nav .nav-links a:hover {
 }
 
 .technology-content h2 {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    /* -webkit-text-stroke-width: 1px; */
+    /* -webkit-text-stroke-color: black; */
     text-align: center;
     flex-wrap: wrap;
     font-size: 3rem;
@@ -386,8 +386,6 @@ nav .nav-links a:hover {
 }
 
 .safety-content h2 {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
     text-align: center;
     flex-wrap: wrap;
     font-size: 3rem;
@@ -482,27 +480,55 @@ nav .nav-links a:hover {
 
 /* About Section */
 .about {
-    padding: 4rem 2rem;
     background: var(--background-gradient);
+    height: auto;
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hero-text-color);
     text-align: center;
 }
 
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.about-content h1 {
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    margin-bottom: 0rem;
     font-family: var(--heading-font);
 }
 
-.about p {
+.about-content h2 {
     text-align: center;
     flex-wrap: wrap;
-    font-size: 1.0rem;
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    font-family: var(--heading-font);
+    color: var(--card-background);
+    max-width: 600px;
+    margin: auto;
+}
+
+.about-content h3 {
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 2rem;
     margin:0 auto;
+    margin-bottom: 2rem;
+    font-family: var(--heading-font);
+}
+
+.about-content p {
+    /* backdrop-filter: blur(5px); */
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    margin: auto;
     margin-bottom: 2rem;
     font-family: var(--body-font);
 }
 
-.about img {
+.about-content img {
     max-width: 600px; /* Makes the image fill the card width */
     width: 100%; /* Makes the image fill the card width */
     height: auto; /* Maintains the image's aspect ratio */
@@ -510,6 +536,7 @@ nav .nav-links a:hover {
     display: block; /* Removes extra space below the image */   
     margin: auto;
     margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 /* Contact Section */
@@ -539,7 +566,7 @@ nav .nav-links a:hover {
     /* backdrop-filter: blur(5px); */
     text-align: center;
     flex-wrap: wrap;
-    font-size: 1.0rem;
+    font-size: 1.25rem;
     margin: auto;
     margin-bottom: 2rem;
     font-family: var(--body-font);
