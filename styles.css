@@ -223,14 +223,12 @@ nav .nav-links a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--text-color);
+    color: var(--hero-text-color);
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
-    /* min-height: 100vh; */
-    /* padding: 4rem 2rem; */
-    display: block;
-    width: 100%; /* Ensures the element takes up the full width */
+    /* display: block; */
+    /* width: 100%; */
 }
 
 .info-content h1 {
@@ -256,12 +254,12 @@ nav .nav-links a:hover {
 
 .info-content p {
     /* backdrop-filter: blur(5px); */
-    text-align: center;
-    flex-wrap: wrap;
     font-size: 1.25rem;
-    margin: auto;
-    margin-bottom: 2rem;
+    margin-top: 0;
+    text-align: center;
     font-family: var(--body-font);
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .info-cards {
@@ -310,13 +308,17 @@ nav .nav-links a:hover {
 
 /* Technology Section */
 .technology {
-    padding: 4rem 2rem;
-    align-items: center;
-    text-align: center;
     background: var(--background-gradient);
+    height: auto;
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hero-text-color);
+    text-align: center;
 }
 
-.technology h1 {
+.technology-content h1 {
     text-align: center;
     flex-wrap: wrap;
     font-size: 4rem;
@@ -324,7 +326,7 @@ nav .nav-links a:hover {
     font-family: var(--heading-font);
 }
 
-.technology h2 {
+.technology-content h2 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     text-align: center;
@@ -337,7 +339,7 @@ nav .nav-links a:hover {
     margin: auto;
 }
 
-.technology h3 {
+.technology-content h3 {
     text-align: center;
     flex-wrap: wrap;
     font-size: 2rem;
@@ -346,7 +348,7 @@ nav .nav-links a:hover {
     font-family: var(--heading-font);
 }
 
-.technology p {
+.technology-content p {
     /* backdrop-filter: blur(5px); */
     text-align: center;
     flex-wrap: wrap;
@@ -365,13 +367,17 @@ nav .nav-links a:hover {
 
 /* Safety Section */
 .safety {
-    padding: 4rem 2rem;
-    align-items: center;
-    text-align: center;
     background: var(--background-gradient);
+    height: auto;
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hero-text-color);
+    text-align: center;
 }
 
-.safety h1 {
+.safety-content h1 {
     text-align: center;
     flex-wrap: wrap;
     font-size: 4rem;
@@ -379,7 +385,7 @@ nav .nav-links a:hover {
     font-family: var(--heading-font);
 }
 
-.safety h2 {
+.safety-content h2 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     text-align: center;
@@ -392,7 +398,7 @@ nav .nav-links a:hover {
     margin: auto;
 }
 
-.safety h3 {
+.safety-content h3 {
     text-align: center;
     flex-wrap: wrap;
     font-size: 2rem;
@@ -401,7 +407,7 @@ nav .nav-links a:hover {
     font-family: var(--heading-font);
 }
 
-.safety p {
+.safety-content p {
     /* backdrop-filter: blur(5px); */
     text-align: center;
     flex-wrap: wrap;
@@ -412,13 +418,10 @@ nav .nav-links a:hover {
 }
 
 .safety-cards {
-    /* display: grid;
-    justify-content: space-around;
-    grid-column-end: span 3; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 /* Card Styles (Shared by Services, Technology, and Safety Sections) */
@@ -491,7 +494,7 @@ nav .nav-links a:hover {
 }
 
 .about p {
-    text-align: left;
+    text-align: center;
     flex-wrap: wrap;
     font-size: 1.0rem;
     margin:0 auto;
