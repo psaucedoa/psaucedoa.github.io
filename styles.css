@@ -216,6 +216,7 @@ nav .nav-links a:hover {
     text-align: center;
     font-family: var(--body-font);
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .info-cards {
@@ -473,14 +474,15 @@ nav .nav-links a:hover {
 footer {
     background-color: var(--nav-background);
     color: var(--nav-text-color);
-    text-align: center;
-    align-items: center;
-    padding: 1rem 0;
+    text-align: center; /* Center-align the text */
     margin-top: auto; /* Pushes the footer to the bottom */
-    display: block;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     width: 100%; /* Ensures the element takes up the full width */
-    /* max-width: 600px; */
 }
+
+
 
 footer p {
     margin: 0.5rem 0;
