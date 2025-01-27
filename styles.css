@@ -181,6 +181,8 @@ nav .nav-links a:hover {
     color: var(--text-color);
     text-align: center;
     margin-top: 100px;
+    /* margin-bottom: 100px; */
+    min-height: 100vh;
     /* padding: 4rem 2rem; */
     display: block;
     width: 100%; /* Ensures the element takes up the full width */
@@ -267,9 +269,19 @@ nav .nav-links a:hover {
     font-family: var(--heading-font);
 }
 
+.technology h3 {
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    margin:0 auto;
+    margin-bottom: 2rem;
+    font-family: var(--heading-font);
+    max-width: 600px;
+}
+
 .technology p {
     /* backdrop-filter: blur(5px); */
-    text-align: left;
+    text-align: center;
     flex-wrap: wrap;
     font-size: 1.0rem;
     margin: auto;
@@ -281,6 +293,7 @@ nav .nav-links a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 /* Safety Section */
@@ -301,7 +314,7 @@ nav .nav-links a:hover {
 }
 
 .safety h3 {
-    text-align: left;
+    text-align: center;
     flex-wrap: wrap;
     font-size: 1.5rem;
     margin:0 auto;
@@ -312,7 +325,7 @@ nav .nav-links a:hover {
 
 .safety p {
     /* backdrop-filter: blur(5px); */
-    text-align: left;
+    text-align: center;
     flex-wrap: wrap;
     font-size: 1.0rem;
     margin: auto;
@@ -327,6 +340,7 @@ nav .nav-links a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 /* Card Styles (Shared by Services, Technology, and Safety Sections) */
@@ -419,11 +433,12 @@ nav .nav-links a:hover {
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
+    align-items: center;
     text-align: center;
     background: var(--background-gradient);
 }
 
-.contact-content h1 {
+.contact h1 {
     text-align: center;
     font-size: 4rem;
     margin-bottom: 0;
@@ -431,18 +446,20 @@ nav .nav-links a:hover {
     font-family: var(--heading-font);
 }
 
-.contact-content h2 {
+.contact h2 {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
     font-family: var(--heading-font);
 }
 
-.contact-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    margin-top: 0;
+.contact p {
+    /* backdrop-filter: blur(5px); */
     text-align: center;
+    flex-wrap: wrap;
+    font-size: 1.0rem;
+    margin: auto;
+    margin-bottom: 2rem;
     font-family: var(--body-font);
 }
 
@@ -456,12 +473,13 @@ nav .nav-links a:hover {
 footer {
     background-color: var(--nav-background);
     color: var(--nav-text-color);
-    text-align: right;
+    text-align: center;
     align-items: center;
     padding: 1rem 0;
     margin-top: auto; /* Pushes the footer to the bottom */
     display: block;
     width: 100%; /* Ensures the element takes up the full width */
+    /* max-width: 600px; */
 }
 
 footer p {
