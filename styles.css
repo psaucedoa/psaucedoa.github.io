@@ -167,12 +167,12 @@ nav .nav-links a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 4rem 2rem;
+    /* padding: 4rem 2rem; */
 }
 
 /* Info Section */
 .info {
-    /* background: var(--background-gradient);
+    background: var(--background-gradient);
     height: auto;
     min-height: max-content;
     display: flex;
@@ -180,15 +180,24 @@ nav .nav-links a:hover {
     align-items: center;
     color: var(--text-color);
     text-align: center;
-    padding: 4rem 2rem;
-    display: block;
-    width: 100%; */
+    margin-top: 100px;
     /* padding: 4rem 2rem; */
-    text-align: center;
-    background: var(--background-gradient);
+    display: block;
+    width: 100%; /* Ensures the element takes up the full width */
 }
 
-.info h2 {
+.info-content h1 {
+    /* -webkit-text-stroke-width: 1px; */
+    /* -webkit-text-stroke-color: black; */
+    /* backdrop-filter: blur(5px); */
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-top: 10rem;
+    font-family: var(--heading-font);
+}
+
+.info-content h2 {
     /* -webkit-text-stroke-width: 1px; */
     /* -webkit-text-stroke-color: black; */
     /* backdrop-filter: blur(5px); */
@@ -196,6 +205,15 @@ nav .nav-links a:hover {
     font-size: 3rem;
     margin-bottom: 1rem;
     font-family: var(--heading-font);
+}
+
+.info-content p {
+    /* backdrop-filter: blur(5px); */
+    font-size: 1.5rem;
+    margin-top: 0;
+    text-align: center;
+    font-family: var(--body-font);
+    margin: auto;
 }
 
 .info-cards {
@@ -230,7 +248,7 @@ nav .nav-links a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 4rem 2rem;
+    /* padding: 4rem 2rem; */
 }
 
 /* Technology Section */
