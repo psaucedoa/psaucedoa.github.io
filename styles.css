@@ -15,6 +15,7 @@
     --paper-border-top: 0px;
     --paper-shadow: 5px 5px rgba(0, 0, 0, 0.25);
 
+    --button-hover: #e0b10e;
     /* Font Variables */
     --heading-font: 'Montserrat'; /* Heading font */
     --mono-font: 'Ubuntu Mono'; /* Heading font */
@@ -135,13 +136,14 @@ span {
     color: var(--text-color);
     padding: 0.75rem 1.5rem;
     font-weight: bold;
+    font-size: 1.5rem;
     font-family: var(--body-font);
     border: 2px solid var(--nav-text-color);
     box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .btn:hover {
-    background-color: #e0b10e;
+    background-color: var(--button-hover);
 }
 
 /* Navigation Bar */
@@ -168,8 +170,8 @@ nav .logo h1 {
     /* text-transform: uppercase; */
     font-family: var(--mono-font);
     font-weight: bold;
-    font-style: bold;
-    font-size: 1.5rem;
+    font-style: italic;
+    font-size: 1rem;
 }
 
 nav .menu-icon {
@@ -193,25 +195,24 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-    color: var(--secondary-color);
-    font-weight: bold;
+    color: var(--nav-text-color);
     font-family: var(--body-font);
     text-decoration: none;
     font-size: 1rem;
 }
 
 nav .nav-links a:hover {
-    color: #f4c10f; /* Highlight color for hover */
+    color: var(--button-hover); /* Highlight color for hover */
 }
 
 /* Responsive Styles for Mobile Devices */
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
     nav {
         padding: 0.5rem 1rem; /* Reduce padding for smaller screens */
     }
 
     nav .logo h1 {
-        font-size: 1.25rem; /* Reduce logo font size */
+        font-size: 1rem; /* Reduce logo font size */
     }
 
     nav .nav-links {
@@ -222,16 +223,25 @@ nav .nav-links a:hover {
     }
 
     nav .nav-links.active {
+        margin-top: 175px;
         display: flex; /* Show links when active (for hamburger menu) */
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        box-sizing: border-box;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+        background-color: #fff;
+        border: 2px solid var(--nav-text-color);
     }
 
     nav .nav-links li {
-        margin: 0.5rem 0; /* Add spacing between stacked links */
+        margin: 0 0; /* Add spacing between stacked links */
     }
 
     /* Hamburger Menu Icon */
     nav .menu-icon {
-        display: block; /* Show the hamburger icon */
+        display: flex; /* Show the hamburger icon */
         cursor: pointer;
         font-size: 1.5rem;
         color: var(--nav-text-color);
@@ -265,10 +275,17 @@ nav .nav-links a:hover {
 }
 
 .hero-content h1 {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
     text-align: center;
     flex-wrap: wrap;
+    /* padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    border: 2px solid var(--nav-text-color); */
+    mix-blend-mode: hard-light;
 }
 
 .hero-content h2 {
@@ -280,6 +297,12 @@ nav .nav-links a:hover {
     text-align: center;
     flex-wrap: wrap;
     margin-bottom: 45px;
+    /* background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    border: 2px solid var(--nav-text-color); */
+    mix-blend-mode: hard-light;
+
 }
 
 .hero-cards {
@@ -405,6 +428,46 @@ nav .nav-links a:hover {
     margin-bottom: 100px;
 }
 
+/* Mission Section */
+.mission {
+    background: var(--nav-background);
+    height: auto;
+    width: var(--paper-width);
+    margin: 0 auto;
+    margin-top: 45px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    min-height: 100vh;
+    box-sizing: border-box;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    border: 2px solid var(--nav-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hero-text-color);
+    text-align: center;
+}
+
+.mission-content img {
+    max-width: 600px; /* Makes the image fill the card width */
+    width: 100%; /* Makes the image fill the card width */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Removes extra space below the image */   
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.mission-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
 /* Safety Section */
 .safety {
     background: var(--nav-background);
@@ -457,19 +520,19 @@ nav .nav-links a:hover {
 .card h3 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    font-family: var(--heading-font);
+    font-family: var(--mono-font);
 }
 
 .card h2 {
     font-size: 2.0rem;
     margin-bottom: 1rem;
-    font-family: var(--heading-font);
+    font-family: var(--mono-font);
 }
 
 .card h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    font-family: var(--heading-font);
+    font-family: var(--mono-font);
 }
 
 .card p {
@@ -482,7 +545,8 @@ nav .nav-links a:hover {
     color: var(--text-color);
     padding: 0.75rem 1.5rem;
     font-weight: bold;
-    font-family: var(--body-font);
+    font-family: var(--mono-font);
+    font-size: 1rem;
 }
 
 .card .btn:hover {
@@ -572,6 +636,6 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-family: var(--body-font);
 }
