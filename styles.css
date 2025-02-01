@@ -150,6 +150,7 @@ span {
 nav {
     height: 60px;
     width: 65vw;
+    min-width: 400px;
     margin: 0 auto;
     margin-top: 45px;
     padding-left: 1em;
