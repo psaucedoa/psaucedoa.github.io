@@ -14,6 +14,7 @@
     --paper-border-bottom: 1px dashed;
     --paper-border-top: 0px;
     --paper-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    --paper-min-width: 400px;
 
     --button-hover: #e0b10e;
     /* Font Variables */
@@ -260,6 +261,7 @@ nav .nav-links a:hover {
     margin-top: 45px;
     height: auto;
     width: var(--paper-width);
+    min-width: var(--paper-min-width);
     margin: 0 auto;
     margin-top: 45px;
     padding-left: 1em;
@@ -318,6 +320,7 @@ nav .nav-links a:hover {
     background: var(--nav-background);
     height: auto;
     width: var(--paper-width);
+    min-width: var(--paper-min-width);
     margin: auto;
     padding-left: 1em;
     padding-right: 1em;
@@ -347,6 +350,7 @@ nav .nav-links a:hover {
     background: var(--nav-background);
     height: auto;
     width: var(--paper-width);
+    min-width: var(--paper-min-width);
     margin: auto;
     padding-left: 1em;
     padding-right: 1em;
@@ -377,6 +381,7 @@ nav .nav-links a:hover {
     background: var(--nav-background);
     height: auto;
     width: var(--paper-width);
+    min-width: var(--paper-min-width);
     margin: 0 auto;
     margin-top: 45px;
     padding-left: 1em;
@@ -435,6 +440,7 @@ nav .nav-links a:hover {
     background: var(--nav-background);
     height: auto;
     width: var(--paper-width);
+    min-width: var(--paper-min-width);
     margin: 0 auto;
     margin-top: 45px;
     padding-left: 1em;
@@ -475,6 +481,7 @@ nav .nav-links a:hover {
     background: var(--nav-background);
     height: auto;
     width: var(--paper-width);
+    min-width: var(--paper-min-width);
     margin: 0 auto;
     margin-top: 45px;
     padding-left: 1em;
@@ -560,6 +567,7 @@ nav .nav-links a:hover {
     background: var(--nav-background);
     height: auto;
     width: var(--paper-width);
+    min-width: var(--paper-min-width);
     margin: 0 auto;
     margin-top: 45px;
     padding-left: 1em;
@@ -593,6 +601,7 @@ nav .nav-links a:hover {
     background: var(--nav-background);
     height: auto;
     width: var(--paper-width);
+    min-width: var(--paper-min-width);
     margin: 0 auto;
     padding-left: 1em;
     padding-right: 1em;
@@ -620,6 +629,7 @@ nav .nav-links a:hover {
 footer {
     height: 60px;
     width: var(--paper-width);
+    min-width: var(--paper-min-width);
     margin: 0 auto;
     margin-top: 45px;
     margin-bottom: 45px;
