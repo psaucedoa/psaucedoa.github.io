@@ -240,6 +240,7 @@ nav .nav-links a:hover {
     nav {
         padding: 0.5rem 1rem; /* Reduce padding for smaller screens */
         min-width: var(--paper-min-width);
+        margin-top: 15px;
     }
 
     nav .logo h1 {
