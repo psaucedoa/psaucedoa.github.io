@@ -14,7 +14,7 @@
     --paper-border-bottom: 1px dashed;
     --paper-border-top: 0px;
     --paper-shadow: 5px 5px rgba(0, 0, 0, 0.25);
-    --paper-min-width: 400px;
+    --paper-min-width: 500px;
 
     --button-hover: #e0b10e;
     /* Font Variables */
@@ -60,8 +60,9 @@ h1 {
     font-size: 4rem;
     font-family: var(--heading-font);
     color: var(--text-color);
-    margin: auto;
     max-width: 600px;
+    margin: auto;
+    padding: 0;
 }
 
 h2 {
@@ -73,6 +74,7 @@ h2 {
     max-width: 600px;
     margin: auto;
     border-bottom: 2px solid var(--nav-text-color);
+    padding: 0;
 }
 
 h3 {
@@ -83,6 +85,7 @@ h3 {
     color: var(--text-color);
     max-width: 600px;
     margin: auto;
+    padding: 0;
 }
 
 p {
@@ -211,6 +214,7 @@ nav .nav-links a:hover {
 @media (max-width: 1140px) {
     nav {
         padding: 0.5rem 1rem; /* Reduce padding for smaller screens */
+        min-width: var(--paper-min-width);
     }
 
     nav .logo h1 {
@@ -252,6 +256,28 @@ nav .nav-links a:hover {
     nav .menu-icon:hover {
         color: #f4c10f;
     }
+
+    p, h1, h2, h3 {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
 }
 
 /* Hero Section */
@@ -499,6 +525,11 @@ nav .nav-links a:hover {
     text-align: center;
 }
 
+.safety-content h1, h2, h3 {
+    padding: 0;
+    margin: auto;
+}
+
 .safety-cards {
     display: flex;
     justify-content: space-around;
@@ -580,9 +611,9 @@ nav .nav-links a:hover {
     border: 2px solid var(--nav-text-color);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     color: var(--hero-text-color);
-    text-align: center;
+    text-align: left;
 }
 
 .about-content img {
