@@ -461,6 +461,7 @@ nav .nav-links a:hover {
     max-height: 200px;
     max-width: 200px;
     box-shadow: var(--img-shadow);
+    filter: blur(5px);
 }
 
 .steps-cards {
@@ -540,6 +541,10 @@ nav .nav-links a:hover {
     /* padding: 4rem 2rem; */
 }
 
+.services-cards img {
+    filter: blur(5px);
+}
+
 /* Technology Section */
 .technology {
     background: var(--nav-background);
@@ -567,13 +572,13 @@ nav .nav-links a:hover {
 }
 
 .technology-content img {
-    max-width: 600px; /* Makes the image fill the card width */
+    max-width: 500px; /* Makes the image fill the card width */
     width: 100%; /* Makes the image fill the card width */
     height: auto; /* Maintains the image's aspect ratio */
     display: block; /* Removes extra space below the image */   
     margin: auto;
     margin-top: 150px;
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
     box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -628,13 +633,13 @@ nav .nav-links a:hover {
 }
 
 .mission-content img {
-    max-width: 600px; /* Makes the image fill the card width */
+    max-width: 500px; /* Makes the image fill the card width */
     width: 100%; /* Makes the image fill the card width */
     height: auto; /* Maintains the image's aspect ratio */
     display: block; /* Removes extra space below the image */   
     margin: auto;
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 45px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -673,6 +678,17 @@ nav .nav-links a:hover {
 .safety-content h1, h2, h3 {
     padding: 0;
     margin: auto;
+}
+
+.safety-content img {
+    max-width: 500px; /* Makes the image fill the card width */
+    width: 100%; /* Makes the image fill the card width */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Removes extra space below the image */   
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 45px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .safety-cards {
@@ -763,14 +779,19 @@ nav .nav-links a:hover {
     text-align: left;
 }
 
+.about-content h1, h2, h3 {
+    padding: 0;
+    margin: auto;
+}
+
 .about-content img {
-    max-width: 600px; /* Makes the image fill the card width */
+    max-width: 500px; /* Makes the image fill the card width */
     width: 100%; /* Makes the image fill the card width */
     height: auto; /* Maintains the image's aspect ratio */
     display: block; /* Removes extra space below the image */   
     margin: auto;
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 45px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -796,6 +817,22 @@ nav .nav-links a:hover {
     align-items: center;
     color: var(--hero-text-color);
     text-align: center;
+}
+
+.contact-content h1, h2, h3 {
+    padding: 0;
+    margin: auto;
+}
+
+.contact-content img {
+    max-width: 500px; /* Makes the image fill the card width */
+    width: 100%; /* Makes the image fill the card width */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Removes extra space below the image */   
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 45px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .contact-cards {
@@ -831,5 +868,5 @@ footer p {
     margin: 0.5rem 0;
     font-size: 0.7rem;
     font-family: var(--body-font);
-    text-align: left;
+    text-align: center;
 }
