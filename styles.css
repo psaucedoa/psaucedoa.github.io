@@ -12,8 +12,9 @@
     --paper-width: 80vw;
     --paper-border: 1px solid #000;
     --paper-border-bottom: 0px dashed;
-    --paper-border-top: 1px dashed;
+    --paper-border-top: 1px solid;
     --paper-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    --img-shadow: 3px 3px rgba(0, 0, 0, 0.15);
     --paper-min-width: 450px;
     --paper-gap: 0px;
     --text-border-bottom: 1px solid;
@@ -29,6 +30,7 @@
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+    /* scroll-padding-top: 45px; */
 }
 
 
@@ -358,7 +360,7 @@ nav .nav-links a:hover {
     padding-right: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
-    min-height: 100vh;
+    min-height: 75vh;
     box-sizing: border-box;
     box-shadow: var(--paper-shadow);
     border: var(--paper-border);
@@ -420,7 +422,7 @@ nav .nav-links a:hover {
 }
 
 /* Steps Section */
-.step {
+.steps {
     background: var(--nav-background);
     height: auto;
     width: var(--paper-width);
@@ -439,20 +441,36 @@ nav .nav-links a:hover {
     border-bottom: var(--paper-border-bottom);
     /* border-top: 0px; */
     border-top: var(--paper-border-top);
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     color: var(--hero-text-color);
     text-align: center;
 }
 
-.step-cards {
+.steps-container {
+    max-width: 1000px;
+    display: grid;
+    align-items: left; 
+    grid-template-columns: 1fr 2fr;
+    /* column-gap: 5px; */
+    margin-bottom: 45px;
+}
+
+.steps img {
+    max-height: 200px;
+    max-width: 200px;
+    box-shadow: var(--img-shadow);
+}
+
+.steps-cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     /* margin-top: -135px; */
     /* padding: 4rem 2rem; */
 }
+
 
 /* Info Section */
 .info {
@@ -803,14 +821,15 @@ footer {
     border-top: var(--paper-border-top);
     background-color: var(--nav-background);
     color: var(--nav-text-color);
-    text-align: center; /* Center-align the text */
-    display: flex; /* Use flexbox for centering */
-    justify-content: space-between; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 25px;
+    align-items: right; 
 }
 
 footer p {
     margin: 0.5rem 0;
     font-size: 0.7rem;
     font-family: var(--body-font);
+    text-align: left;
 }
