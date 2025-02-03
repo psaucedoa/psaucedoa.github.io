@@ -577,7 +577,7 @@ nav .nav-links a:hover {
     height: auto; /* Maintains the image's aspect ratio */
     display: block; /* Removes extra space below the image */   
     margin: auto;
-    margin-top: 150px;
+    margin-top: 90px;
     /* margin-bottom: 150px; */
     box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
 }
@@ -604,7 +604,6 @@ nav .nav-links a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 100px;
 }
 
 /* Mission Section */
@@ -638,7 +637,7 @@ nav .nav-links a:hover {
     height: auto; /* Maintains the image's aspect ratio */
     display: block; /* Removes extra space below the image */   
     margin: auto;
-    margin-top: 150px;
+    margin-top: 90px;
     margin-bottom: 45px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
 }
@@ -686,7 +685,7 @@ nav .nav-links a:hover {
     height: auto; /* Maintains the image's aspect ratio */
     display: block; /* Removes extra space below the image */   
     margin: auto;
-    margin-top: 150px;
+    margin-top: 90px;
     margin-bottom: 45px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
 }
@@ -790,7 +789,7 @@ nav .nav-links a:hover {
     height: auto; /* Maintains the image's aspect ratio */
     display: block; /* Removes extra space below the image */   
     margin: auto;
-    margin-top: 150px;
+    margin-top: 90px;
     margin-bottom: 45px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
 }
@@ -830,7 +829,7 @@ nav .nav-links a:hover {
     height: auto; /* Maintains the image's aspect ratio */
     display: block; /* Removes extra space below the image */   
     margin: auto;
-    margin-top: 150px;
+    margin-top: 90px;
     margin-bottom: 45px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
 }
