@@ -11,8 +11,8 @@
     --fade-gradient: linear-gradient(to top, var(--nav-background), var(--card-background));
     --paper-width: 80vw;
     --paper-border: 1px solid #000;
-    --paper-border-bottom: 0px solid;
-    --paper-border-top: 1px solid;
+    --paper-border-bottom: 0px dashed;
+    --paper-border-top: 1px dashed;
     --paper-shadow: 5px 5px rgba(0, 0, 0, 0.25);
     --paper-min-width: 450px;
     --paper-gap: 0px;
@@ -96,7 +96,7 @@ h3 {
 p {
     text-align: left;
     flex-wrap: wrap;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-family: var(--mono-font);
     color: var(--text-color);
     max-width: 1000px;
@@ -169,7 +169,7 @@ nav {
     box-shadow: 5px 0px rgba(0, 0, 0, 0.25);
     background-color: var(--nav-background);
     border: var(--paper-border);
-    /* border-bottom: var(--paper-border-top); */
+    border-bottom: var(--paper-border-top);
     /* border-top: var(--paper-border-top); */
     display: flex;
     justify-content: space-between;
@@ -360,9 +360,10 @@ nav .nav-links a:hover {
     padding-bottom: 2em;
     min-height: 100vh;
     box-sizing: border-box;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--paper-shadow);
     border: var(--paper-border);
     border-bottom: var(--paper-border-bottom);
+    /* border-top: var(--paper-border-top); */
     border-top: 0px;
     display: flex;
     justify-content: center;
@@ -418,6 +419,41 @@ nav .nav-links a:hover {
     /* padding: 4rem 2rem; */
 }
 
+/* Steps Section */
+.step {
+    background: var(--nav-background);
+    height: auto;
+    width: var(--paper-width);
+    min-width: var(--paper-min-width);
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: var(--paper-gap);
+    /* margin-top: 45px; */
+    /* min-height: 100vh; */
+    box-sizing: border-box;
+    box-shadow: var(--paper-shadow);
+    border: var(--paper-border);
+    border-bottom: var(--paper-border-bottom);
+    /* border-top: 0px; */
+    border-top: var(--paper-border-top);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hero-text-color);
+    text-align: center;
+}
+
+.step-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* margin-top: -135px; */
+    /* padding: 4rem 2rem; */
+}
+
 /* Info Section */
 .info {
     background: var(--nav-background);
@@ -469,8 +505,8 @@ nav .nav-links a:hover {
     box-shadow: var(--paper-shadow);
     border: var(--paper-border);
     border-bottom: var(--paper-border-bottom);
-    border-top: 0px;
-    /* border-top: var(--paper-border-top); */
+    /* border-top: 0px; */
+    border-top: var(--paper-border-top);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -753,7 +789,7 @@ nav .nav-links a:hover {
 
 /* Footer */
 footer {
-    height: 30px;
+    height: auto;
     width: var(--paper-width);
     min-width: var(--paper-min-width);
     margin: 0 auto;
@@ -775,6 +811,6 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-family: var(--body-font);
 }
