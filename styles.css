@@ -452,7 +452,7 @@ nav .nav-links a:hover {
     max-width: 1000px;
     display: grid;
     align-items: left; 
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     /* column-gap: 5px; */
     margin-bottom: 45px;
 }
@@ -460,11 +460,12 @@ nav .nav-links a:hover {
 .steps img {
     max-height: 200px;
     max-width: 200px;
-    width: 70%;
+    width: 40%;
     /* border: var(--paper-border); */
     /* border-radius: 50%; */
     border-width: 1px;
-    box-shadow: var(--img-shadow);
+    opacity: 0.5
+    /* box-shadow: var(--img-shadow); */
     /* filter: blur(5px); */
 }
 
