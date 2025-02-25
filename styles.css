@@ -1,23 +1,27 @@
 /* Define CSS Variables */
 :root {
-    --primary-color: #ffb868; /* Lighter orange */
+    /* --primary-color: #ffb868; */
+    --primary-color: #ffa43d; /* Lighter orange */
     --secondary-color: #cc7103; /* Darker orange */
     --background-gradient: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    --background-gradient-gray: linear-gradient(to left, var(--secondary-color), var(--primary-color));
     --card-background: rgba(0, 0, 0, 0.1);
     --text-color: #333; /* Default text color */
-    --nav-background: #fff; /* Navigation background */
+    --nav-background: #ffffff; /* Navigation background */
+    --main-background: #fdf6e3;
     --nav-text-color: #333; /* Navigation text color */
-    --hero-text-color: #333; /* Navigation text color */
+    --hero-text-color: #ffffff; /* Navigation text color */
     --fade-gradient: linear-gradient(to top, var(--nav-background), var(--card-background));
-    --paper-width: 80vw;
+    --paper-width: 97%;
     --paper-border: 1px solid #000;
     --paper-border-bottom: 0px dashed;
     --paper-border-top: 1px solid;
-    --paper-shadow: 5px 5px rgba(0, 0, 0, 0.25);
-    --img-shadow: 3px 3px rgba(0, 0, 0, 0.15);
+    --paper-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    --img-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
     --paper-min-width: 450px;
     --paper-gap: 0px;
-    --text-border-bottom: 1px solid;
+    --text-border-bottom: 3px solid;
+    --main-corner-radius: 15px;
 
     --button-hover: #e0b10e;
     --button: #f4c10f;
@@ -45,7 +49,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: var(--text-color);
-    background: var(--background-gradient); /* Use gradient variable */
+    background: var(--main-background);
     display: flex;
     flex-direction: column;
     /* min-height: 100vh; */
@@ -57,12 +61,13 @@ body {
 /* Main Content Wrapper */
 main {
     flex: 1; /* Allows the main content to grow and fill the available space */
+
 }
 
 h1 {
     text-align: left;
     flex-wrap: wrap;
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: var(--heading-font);
     color: var(--text-color);
     max-width: 1000px;
@@ -73,21 +78,21 @@ h1 {
 h2 {
     text-align: left;
     flex-wrap: wrap;
-    font-size: 1.25rem;
+    font-size: 3rem;
     font-family: var(--mono-font);
     color: var(--text-color);
     max-width: 1000px;
     margin: auto;
-    border-bottom: var(--text-border-bottom);
+    /* border-bottom: var(--text-border-bottom); */
     padding-left: 1em;
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
     /* box-shadow: -5px 0px rgba(0, 0, 0, 0.25); */
 }
 
 h3 {
     text-align: left;
     flex-wrap: wrap;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: var(--mono-font);
     color: var(--text-color);
     max-width: 1000px;
@@ -98,7 +103,7 @@ h3 {
 p {
     text-align: left;
     flex-wrap: wrap;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: var(--mono-font);
     color: var(--text-color);
     max-width: 1000px;
@@ -149,8 +154,9 @@ span {
     font-weight: bold;
     font-size: 1.5rem;
     font-family: var(--body-font);
-    border: var(--paper-border);
     box-shadow: 3px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    background-color: var(--button);
 }
 
 .btn:hover {
@@ -160,41 +166,43 @@ span {
 /* Navigation Bar */
 nav {
     height: 60px;
-    width: var(--paper-width);
+    width: 100%;
     min-width: 400px;
     margin: 0 auto;
-    margin-top: 45px;
+    /* margin-top: 45px; */
     /* margin-bottom: 45px; */
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
     box-sizing: border-box;
-    /* box-shadow: 5px 0px rgba(0, 0, 0, 0.25); */
-    background-color: var(--nav-background);
-    border: var(--paper-border);
-    border-bottom: var(--paper-border-top);
-    /* border-top: var(--paper-border-top); */
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25); */
+    /* background-color: var(--main-background); */
+    /* border-radius: var(--main-corner-radius); */
+    /* backdrop-filter: blur(5px); */
     display: flex;
     justify-content: space-between;
     top: 0px;
     align-items: center;
-    position: sticky;
+    /* position: sticky; */
     z-index: 3;
 }
 
 nav .logo h1 {
     /* text-transform: uppercase; */
-    font-family: var(--mono-font);
+    font-family: var(--heading-font);
     font-weight: bold;
-    font-style: italic;
-    font-size: 1rem;
-    /* padding-left: 0.5em;
-    padding-right: 0.5em;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    box-sizing: border-box;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
-    background-color: var(--button);
-    border: 2px solid var(--nav-text-color); */
+    /* font-style: italic; */
+    font-size: 1.5rem;
+    background-image: var(--background-gradient-gray);
+    color: transparent;
+    background-clip: text;
+    /* padding-left: 0.5em; */
+    /* padding-right: 0.5em; */
+    /* padding-top: 0.25em; */
+    /* padding-bottom: 0.25em; */
+    /* box-sizing: border-box; */
+    /* box-shadow: 5px 5px rgba(0, 0, 0, 0.15); */
+    /* background-color: var(--button); */
+    /* border: 2px solid var(--nav-text-color);  */
 }
 
 nav .menu-icon {
@@ -209,27 +217,28 @@ nav .nav-links {
     display: flex;
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 nav .nav-links li {
     margin-left: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 nav .nav-links a {
     color: var(--nav-text-color);
     font-family: var(--body-font);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-top: 0.25em;
     padding-bottom: 0.25em;
     box-sizing: border-box;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
     background-color: var(--button);
-    border: var(--paper-border);
+    /* border: var(--paper-border); */
 }
 
 nav .nav-links a:hover {
@@ -348,30 +357,51 @@ nav .nav-links a:hover {
 
 /* Hero Section */
 .hero {
-    /* background: var(--nav-background); */
-    background: url(images/background/fog.JPG);
+    background: url(images/background/chi_const.JPG);
+    background-size: cover;
     height: auto;
-    width: var(--paper-width);
+    width: 97%;
     min-width: var(--paper-min-width);
     margin: 0 auto;
-    /* margin-bottom: var(--paper-gap); */
-    /* margin-top: 45px; */
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
     min-height: 75vh;
     box-sizing: border-box;
-    box-shadow: var(--paper-shadow);
-    border: var(--paper-border);
-    border-bottom: var(--paper-border-bottom);
-    /* border-top: var(--paper-border-top); */
     border-top: 0px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     color: var(--hero-text-color);
-    text-align: center;
+    border-radius: var(--main-corner-radius);
+    margin-bottom: 45px;
+}
+
+.hero-content h1 {
+    background-image: var(--background-gradient);
+    color: transparent;
+    background-clip: text;
+    font-size: 5rem;
+    line-height: 1em;
+
+}
+
+.hero-content h2 {
+    line-height: 1em;
+    color: var(--main-background);
+    /* text-shadow: 1px 1px 2px black; */
+}
+
+.hero-content h3 {
+    color: var(--main-background);
+    text-shadow: 1px 1px 2px black;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--main-background);
+    text-shadow: 1px 1px 2px black;
 }
 
 .hero-content img {
@@ -381,10 +411,8 @@ nav .nav-links a:hover {
     height: auto; /* Maintains the image's aspect ratio */
     display: inline; /* Removes extra space below the image */   
     margin: auto;
-    margin-top: 45px;
     justify-content: right;
     align-items: right;
-    margin-bottom: 150px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
     /* display: flex; */
     /* justify-content: space-around; */
@@ -423,29 +451,23 @@ nav .nav-links a:hover {
 
 /* Steps Section */
 .steps {
-    background: var(--nav-background);
+    /* background: var(--nav-background); */
     height: auto;
     width: var(--paper-width);
     min-width: var(--paper-min-width);
     margin: auto;
+    margin-top: 45px;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
-    margin-bottom: var(--paper-gap);
-    /* margin-top: 45px; */
-    /* min-height: 100vh; */
     box-sizing: border-box;
-    box-shadow: var(--paper-shadow);
-    border: var(--paper-border);
-    border-bottom: var(--paper-border-bottom);
-    /* border-top: 0px; */
-    border-top: var(--paper-border-top);
     display: grid;
     justify-content: center;
     align-items: center;
     color: var(--hero-text-color);
     text-align: center;
+    border-radius: var(--main-corner-radius);
 }
 
 .steps-container {
@@ -480,7 +502,7 @@ nav .nav-links a:hover {
 
 /* Info Section */
 .info {
-    background: var(--nav-background);
+    /* background: var(--background-gradient); */
     height: auto;
     width: var(--paper-width);
     min-width: var(--paper-min-width);
@@ -489,31 +511,29 @@ nav .nav-links a:hover {
     padding-right: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
-    margin-bottom: var(--paper-gap);
-    /* margin-top: 45px; */
-    /* min-height: 100vh; */
     box-sizing: border-box;
-    box-shadow: var(--paper-shadow);
-    border: var(--paper-border);
-    border-bottom: var(--paper-border-bottom);
-    border-top: var(--paper-border-top);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--hero-text-color);
     text-align: center;
+    border-radius: var(--main-corner-radius);
 }
 
 .info-cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
     /* padding: 4rem 2rem; */
 }
 
 /* Services Section */
 .services {
-    background: var(--nav-background);
+    /* background: var(--nav-background); */
+    /* background: url(images/filler/learning_and_labor.JPG); */
+    background: var(--background-gradient);
+    background-size: cover;
     height: auto;
     width: var(--paper-width);
     min-width: var(--paper-min-width);
@@ -522,32 +542,26 @@ nav .nav-links a:hover {
     padding-right: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
-    margin-bottom: var(--paper-gap);
-    /* margin-top: 45px; */
-    /* min-height: 100vh; */
     box-sizing: border-box;
-    box-shadow: var(--paper-shadow);
-    border: var(--paper-border);
-    border-bottom: var(--paper-border-bottom);
-    /* border-top: 0px; */
-    border-top: var(--paper-border-top);
     display: flex;
     justify-content: center;
-    align-items: center;
     color: var(--hero-text-color);
     text-align: center;
+    border-radius: var(--main-corner-radius);
 }
 
 .services-cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* margin-top: -135px; */
-    /* padding: 4rem 2rem; */
+}
+
+.services-cards h3{
+    font-size: 1.5rem;
 }
 
 .services-cards img {
-    filter: blur(5px);
+    filter: blur(0px);
 }
 
 /* Technology Section */
@@ -704,15 +718,15 @@ nav .nav-links a:hover {
 
 /* Card Styles (Shared by Services, Technology, and Safety Sections) */
 .card {
-    background-color: var(--nav-background);
+    /* background-color: var(--nav-background); */
+    background: var(--nav-background);
     padding: 2rem;
     margin: 1rem;
     width: 300px;
-    border: 0px solid var(--nav-text-color);
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.25);
-    border: 1px solid;
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25); */
     overflow: hidden; /* Ensures the image respects the card's rounded corners */
     z-index: 2;
+    border-radius: var(--main-corner-radius);
 }
 
 .card img {
@@ -729,13 +743,13 @@ nav .nav-links a:hover {
 }
 
 .card h2 {
-    /* font-size: 2.0rem; */
+    font-size: 2.0rem;
     margin-bottom: 1rem;
     font-family: var(--mono-font);
 }
 
 .card h1 {
-    /* font-size: 2.5rem; */
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     font-family: var(--mono-font);
 }
@@ -801,7 +815,7 @@ nav .nav-links a:hover {
 
 /* Contact Section */
 .contact {
-    background: var(--nav-background);
+    /* background: var(--nav-background); */
     height: auto;
     width: var(--paper-width);
     min-width: var(--paper-min-width);
@@ -812,21 +826,19 @@ nav .nav-links a:hover {
     padding-bottom: 2em;
     /* margin-top: 45px; */
     box-sizing: border-box;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
-    border: var(--paper-border);
-    border-bottom: var(--paper-border-bottom);
-    border-top: var(--paper-border-top);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--hero-text-color);
-    text-align: center;
+    border-radius: var(--main-corner-radius);
+    margin-bottom: 45px;
 }
 
-.contact-content h1, h2, h3 {
+/* .contact-content h1, h2, h3, p{
     padding: 0;
     margin: auto;
-}
+    color: var(--main-background)
+} */
 
 .contact-content img {
     max-width: 500px; /* Makes the image fill the card width */
@@ -857,10 +869,11 @@ footer {
     padding-left: 1em;
     padding-right: 1em;
     box-sizing: border-box;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
-    border: var(--paper-border);
-    border-top: var(--paper-border-top);
+    border-radius: var(--main-corner-radius);
+    /* box-shadow: 5px 5px rgba(0, 0, 0, 0.25); */
     background-color: var(--nav-background);
+    /* background: url(images/filler/plant_dirt_noise.JPG);
+    background-size: cover; */
     color: var(--nav-text-color);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -873,4 +886,5 @@ footer p {
     font-size: 0.7rem;
     font-family: var(--body-font);
     text-align: center;
+    /* color: var(--main-background) */
 }
