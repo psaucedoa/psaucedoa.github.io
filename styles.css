@@ -12,14 +12,16 @@
     --background: var(--light);
     --main-background: #fff0d6;
 
-    --logo-color: #ffa600;
+    --logo-color: #333;
     --text-color: #333; /* Default text color */
     --nav-text-color: #333; /* Navigation text color */
     --hero-text-color: #ffffff; /* Navigation text color */
 
 
-    --background-gradient: linear-gradient(to top, var(--background), white);
+    --background-gradient: linear-gradient(to left, var(--background), var(--extra-light));
+    --background-gradient-r: linear-gradient(to bottom, var(--background), var(--extra-light));
     --background-gradient-gray: linear-gradient(to left, var(--secondary-color), var(--primary-color));
+
     --fade-gradient: linear-gradient(to top, var(--nav-background), var(--card-background));
     --text-gradient: linear-gradient(to right, var(--extra-light), var(--medium));
 
@@ -66,7 +68,8 @@ body {
     padding: 0;
     line-height: 1.6;
     color: var(--text-color);
-    background: var(--background);
+    /* background: var(--background); */
+    background: var(--background-gradient);
     display: flex;
     flex-direction: column;
     /* min-height: 100vh; */
@@ -87,9 +90,9 @@ h1 {
     font-size: 4rem;
     font-family: var(--heading-font);
     color: var(--text-color);
-    max-width: 1000px;
-    margin: auto;
-    padding: 0;
+    /* max-width: 1000px; */
+    /* margin: auto; */
+    /* padding: 0; */
 }
 
 h2 {
@@ -98,10 +101,10 @@ h2 {
     font-size: 3rem;
     font-family: var(--mono-font);
     color: var(--text-color);
-    max-width: 1000px;
-    margin: auto;
+    /* max-width: 1000px; */
+    /* margin: auto; */
     /* border-bottom: var(--text-border-bottom); */
-    padding-left: 1em;
+    /* padding-left: 1em; */
     /* background-color: rgba(0, 0, 0, 0.1); */
     /* box-shadow: -5px 0px rgba(0, 0, 0, 0.25); */
 }
@@ -112,9 +115,9 @@ h3 {
     font-size: 2rem;
     font-family: var(--mono-font);
     color: var(--text-color);
-    max-width: 1000px;
-    margin: auto;
-    padding: 0;
+    /* max-width: 1000px; */
+    /* margin: auto; */
+    /* padding: 0; */
 }
 
 p {
@@ -123,8 +126,8 @@ p {
     font-size: 1.25rem;
     font-family: var(--mono-font);
     color: var(--text-color);
-    max-width: 1000px;
-    margin: auto;
+    /* max-width: 1000px; */
+    /* margin: auto; */
     /* border: 2px solid var(--nav-text-color); */
     /* border-top: 0px dashed; */
 
@@ -378,7 +381,7 @@ nav .nav-links a:hover {
     background: url(images/background/chi_const.JPG);
     background-size: cover;
     height: auto;
-    width: 97%;
+    width: 100%;
     min-width: var(--paper-min-width);
     margin: 0 auto;
     padding-left: 1em;
@@ -391,7 +394,7 @@ nav .nav-links a:hover {
     display: flex;
     justify-content: left;
     color: var(--hero-text-color);
-    border-radius: var(--main-corner-radius);
+    /* border-radius: var(--main-corner-radius); */
     margin-bottom: 45px;
 }
 
@@ -402,6 +405,7 @@ nav .nav-links a:hover {
     /* color: var(--hero-text-color); */
     font-size: 5rem;
     line-height: 1em;
+    max-width: 1000px;
 
 }
 
@@ -409,11 +413,13 @@ nav .nav-links a:hover {
     line-height: 1em;
     color: var(--main-background);
     /* text-shadow: 1px 1px 2px black; */
+    max-width: 900px;
 }
 
 .hero-content h3 {
     color: var(--main-background);
     text-shadow: 1px 1px 2px black;
+    max-width: 1000px;
 }
 
 .hero-content p {
@@ -421,6 +427,7 @@ nav .nav-links a:hover {
     font-style: italic;
     color: var(--main-background);
     text-shadow: 1px 1px 2px black;
+    max-width: 1000px;
 }
 
 .hero-content img {
@@ -473,38 +480,37 @@ nav .nav-links a:hover {
     /* background: var(--nav-background); */
     /* background: var(--main-background); */
     height: auto;
-    width: var(--paper-width);
+    /* width: var(--paper-width); */
+    width: 100%;
     min-width: var(--paper-min-width);
     margin: auto;
-    margin-top: 45px;
+    /* margin-top: 180px; */
+    padding-bottom: 180px;
     box-sizing: border-box;
     display: grid;
     justify-content: center;
     align-items: center;
     color: var(--hero-text-color);
     text-align: center;
-    border-radius: var(--main-corner-radius);
-    max-width: 135vh;
+    /* max-width: 135vh; */
 }
 
 .default-container {
     display: grid;
     align-items: left; 
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
     border-radius: var(--main-corner-radius);
+    max-width: 135vh;
     /* column-gap: 5px; */
 }
 
-.default img {
-    max-height: 200px;
-    max-width: 200px;
-    width: 40%;
-    /* border: var(--paper-border); */
-    /* border-radius: 50%; */
-    border-width: 1px;
-    opacity: 0.5
-    /* box-shadow: var(--img-shadow); */
-    /* filter: blur(5px); */
+.default-container-rows {
+    display: grid;
+    align-items: left; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-radius: var(--main-corner-radius);
+    /* column-gap: 5px; */
 }
 
 .default-cards {
@@ -515,9 +521,41 @@ nav .nav-links a:hover {
     overflow: hidden; /* Ensures the image respects the card's rounded corners */
     z-index: 2;
     border-radius: var(--main-corner-radius);
+    box-shadow: 10px 10px #ffffff5d;
 }
 
+.default-cards img {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    /* display: flex; */
+}
 
+.small-img-cards {
+    /* background-color: var(--nav-background); */
+    background: var(--nav-background);
+    padding: 2rem;
+    /* width: 300px; */
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25); */
+    overflow: hidden; /* Ensures the image respects the card's rounded corners */
+    z-index: 2;
+    border-radius: var(--main-corner-radius);
+    box-shadow: 10px 10px #ffffff5d;
+}
+
+.small-img-cards img {
+    width: 100%; /* Makes the image fill the card width */
+    height: 250px; /* Maintains the image's aspect ratio */
+    display: block; /* Removes extra space below the image */
+    border-radius: var(--main-corner-radius);
+    margin: auto;
+    object-fit: cover;
+    /* padding: 0; */
+    /* margin: 0; */
+    /* display: flex; */
+}
 
 /* Technology Section */
 .technology {
@@ -642,15 +680,16 @@ nav .nav-links a:hover {
 footer {
     height: auto;
     width: var(--paper-width);
+    max-width: 135vh;
     min-width: var(--paper-min-width);
     margin: 0 auto;
-    /* margin-top: 45px; */
-    margin-bottom: 45px;
     padding-left: 1em;
     padding-right: 1em;
     box-sizing: border-box;
     border-radius: var(--main-corner-radius);
-    /* box-shadow: 5px 5px rgba(0, 0, 0, 0.25); */
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 10px 10px #ffffff5d;
     background-color: var(--nav-background);
     /* background: url(images/filler/plant_dirt_noise.JPG);
     background-size: cover; */
