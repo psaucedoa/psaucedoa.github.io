@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psaucedoa</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><body>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h1>psaucedoa</h1>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+            <!-- add a tag/id and then some js func to replace text with bracketed text? -->
+            <li><a href="../index.html">home</a></li>
+            <li><a class="current-page" href="about.html">about</a></li>
+            <li><a href="maps.html">maps</a></li>
+            <li><a href="pictures.html">pictures</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- landing Section -->
+    <section id="about" class="default">
+        <div id="about-container" class="default-container-first">
+            <img src="../images/michigan/blur.JPG" alt="Picture of me" class="default-image" style="border-top: 0;"/>
+            <p><b>Arturo Saucedo</b></p>
+            <p><i>Research Aerospace Engineer @ CERL</i></p>
+            <p>B.S. Aerospace Engineering w/ Minor in GGIS, University of Illinois Urbana-Champaign.</p>
+        </div>
+
+
+        <div id="about-container" class="default-container">
+            <img src="../images/grad/alma.JPG" alt="Picture of Alma" class="default-image"/>
+            <p>
+                I currently work with a small team on research with <b>robotic heavy construction equipment</b>.
+                We recently finished a robotic retrofit of a piece of heavy equipment, where I focused on proprioception and compute integration. 
+                This included setting up a new software stack in <b>ROS2</b>, writing device drivers for <b>ROS2_control</b>, setting up a new robot model, tuning controllers, integrating in-house autonomous blade controllers, reverse engineering some vehicle communications, and of course making tons of electrical harnesses.
+                Really, it was a little bit (a lot) of everything, all the time.
+            </p>
+            <p>
+                We're currently focused on <b>training / finetuning</b> models to enable greater autonomy on our platform.
+                Well, it would be nice to just finetune an existing generalist policy / foundation model,
+                but...
+            </p>
+            <p>
+                Previously, I've worked on <b>localization and computer vision</b> for the same team (mostly on a different platform).
+                This included working with loads of GIS data, both as inputs for localization and as outputs from mapping subsystems.
+            </p>
+            <p>
+                Additionally, I've worked on a <b>historical preservation project</b> recording the architectural, historical, and political significance of cold war era launch sites in Vandenberg Space Force Base.
+                (This included site visits!)
+            </p>
+            <p>
+                I have also conducted some exploratory <b>urban geography research</b>, looking into the interplay between urban highway bridge infrastructure and the surrounding urban population.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p style="text-transform: uppercase;">2025 Arturo Saucedo. Made in the USA.</p>
+        <p style="text-transform: uppercase;">¡Get a bidet!</p>
+        <p style="text-transform: uppercase;">Contact me at: psaucedoa@gmail.com</p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+
+</body>
+</html>
