@@ -291,6 +291,7 @@ nav .nav-links a:hover {
 .default p {
     padding-left: 1em;
     padding-right: 1em;
+    margin: 0 auto;
     /* padding-top: 1em; */
     /* padding-bottom: 1em; */
 }
