@@ -248,7 +248,7 @@ nav .nav-links a {
     color: var(--nav-text-color);
     font-family: var(--body-font);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-top: 0.25em;
@@ -380,18 +380,18 @@ nav .nav-links a:hover {
 /* Footer */
 footer {
     height: auto;
-    width: 90%;
+    width: 70%;
     max-width: var(--max-width);
     min-width: var(--min-width);
 
-    margin: 15px auto;
+    margin: 25px auto;
 
     padding-left: 0em;
     padding-right: 0em;
-    box-sizing: border-box;
-    box-shadow: 3px 3px var(--main-shadow);
-    background-color: var(--nav-background);
-    border: var(--paper-border);
+    /* box-sizing: border-box; */
+    /* box-shadow: 3px 3px var(--main-shadow); */
+    /* background-color: var(--nav-background); */
+    /* border: var(--paper-border); */
 
     color: var(--nav-text-color);
     display: grid;
