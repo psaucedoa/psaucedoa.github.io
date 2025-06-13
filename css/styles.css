@@ -23,7 +23,6 @@
     --card-background: rgba(0, 0, 0, 0.1);
     --nav-background: #ffffff; /* Navigation background */
 
-    --paper-width: 1500px;
     --paper-border: 1px solid #000000;
     --paper-border-bottom: 0px dashed;
     --paper-border-top: 1px solid;
@@ -40,7 +39,7 @@
     /* --button-hover: #f7e1fa; */
     --button-hover-text: #f7e1fa;
 
-    --max-width: 1000px;
+    --max-width: 700px;
     --min-width: 450px;
 
     --main-shadow: rgba(0, 0, 0, 0.25);
@@ -55,7 +54,7 @@
 html {
     scroll-behavior: smooth;
     /* scroll-padding-top: 45px; */
-    height: 90%;
+    /* height: 90%; */
     margin: 0;
     padding: 0;
 }
@@ -193,7 +192,7 @@ nav {
     background-color: var(--main-background);
 
     height: 35px;
-    width: 90%;
+    width: 70%;
     min-width: var(--min-width);
     max-width: var(--max-width);
     
@@ -301,7 +300,7 @@ nav .nav-links a:hover {
 
     background-color: #ffffff;
 
-    width: 90%;
+    width: 70%;
     max-width: var(--max-width);
     min-width: var(--min-width);
     height: auto;
@@ -325,7 +324,7 @@ nav .nav-links a:hover {
 
     background-color: #ffffff;
 
-    width: 90%;
+    width: 70%;
     max-width: var(--max-width);
     min-width: var(--min-width);
     height: auto;
@@ -333,7 +332,7 @@ nav .nav-links a:hover {
     aspect-ratio: 3/2;
 
     margin: auto;
-    margin-bottom: 250px;
+    margin-bottom: 25px;
     padding: 0;
 
     box-sizing: border-box;

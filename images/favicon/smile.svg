@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (2aeb623e1d, 2025-05-12)"
+   sodipodi:docname="smile.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4877245"
+     inkscape:cx="218.45443"
+     inkscape:cy="185.85431"
+     inkscape:window-width="1866"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <rect
+       x="3.3608374"
+       y="3.3608374"
+       width="372.38078"
+       height="372.38078"
+       id="rect3" />
+    <rect
+       x="4.7051723"
+       y="5.3773398"
+       width="368.34778"
+       height="368.34778"
+       id="rect2" />
+    <rect
+       x="12.771182"
+       y="38.313546"
+       width="365.65911"
+       height="339.44457"
+       id="rect1" />
+  </defs>
+  <text
+     xml:space="preserve"
+     transform="matrix(0.00447947,0.35637087,-0.52008034,1.3566653e-4,108.16148,-18.810839)"
+     id="text2"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:monospace;-inkscape-font-specification:monospace;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#000000;stroke:#87a8cd;stroke-width:0.5;stroke-opacity:0"><tspan
+       x="16.161133"
+       y="173.23633"
+       id="tspan2"><tspan
+         style="font-weight:bold;-inkscape-font-specification:'monospace Bold'"
+         id="tspan1"> ^)</tspan></tspan></text>
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke:#87a8cd;stroke-width:0.216346;stroke-opacity:0"
+     id="rect5"
+     width="12.542893"
+     height="22.680017"
+     x="-14.321196"
+     y="20.963352"
+     transform="rotate(-44.667727)" />
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke:#87a8cd;stroke-width:0.216346;stroke-opacity:0"
+     id="rect5-0"
+     width="12.542893"
+     height="22.680017"
+     x="17.874348"
+     y="31.389866"
+     transform="rotate(-44.667727)" />
+</svg>
