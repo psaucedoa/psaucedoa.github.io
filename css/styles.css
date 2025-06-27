@@ -5,9 +5,11 @@
 
     --background: var(--primary-color);
     --main-background: #fffce5;
-    /* --main-background: #dff0d2; */
+    /* --main-background: #d0e7cd; */
 
-    --logo-color: #333;
+    /* --logo-color: #333; */
+    --logo-color: #ffcdcd;
+    /* --logo-color: #5e8161; */
     --text-color: #333; /* Default text color */
     --nav-text-color: #333; /* Navigation text color */
     --hero-text-color: #ffffff; /* Navigation text color */
@@ -141,7 +143,17 @@ a {
     font-size: 1.5rem;
 }
 
-
+summary {
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-family: var(--mono-font);
+    color: var(--text-color);
+    /* max-width: 1000px; */
+    /* margin: auto; */
+    /* border: 2px solid var(--nav-text-color); */
+    /* border-top: 0px dashed; */
+}
 
 span {
     font-family: var(--mono-font);
@@ -221,6 +233,9 @@ nav .logo h1 {
     font-weight: bold;
     font-size: 1.5rem;
     color: var(--logo-color);
+    text-shadow: -2px 2px 0px #000000a6;
+    /* text-shadow: -2px 2px 0px #5e8161; */
+    /* text-shadow: -2px 2px 0px #ffcdcd; */
 }
 
 nav .menu-icon {
