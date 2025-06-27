@@ -233,9 +233,10 @@ nav .logo h1 {
     font-weight: bold;
     font-size: 1.5rem;
     color: var(--logo-color);
-    text-shadow: -2px 2px 0px #000000a6;
+    /* text-shadow: -2px 2px 0px #000000a6;
+     */
     /* text-shadow: -2px 2px 0px #5e8161; */
-    /* text-shadow: -2px 2px 0px #ffcdcd; */
+    text-shadow: -2px 2px 0px #977575;
 }
 
 nav .menu-icon {
