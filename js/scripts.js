@@ -81,6 +81,7 @@ const imageUrls = [
     ['images/michigan/spider.JPG', 'Spider!'],
     ['images/michigan/spider_maybe.JPG', 'Spider?'],
     ['images/michigan/waves.JPG', 'Wavy'],
+    ['images/other_animals/shy_turtle.JPG', 'Performance anxiety'],
     ['images/rando/fog.JPG', 'Cerro'],
     ['images/rando/mazda_3.JPG', 'RIP 2019 Mazda 3'],
     ['images/rando/miata.JPG', '2007 Mazda MX-5 Miata, 6-speed, PRHT'],
