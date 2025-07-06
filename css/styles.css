@@ -165,6 +165,9 @@ button {
     box-shadow: 3px 3px rgba(0, 0, 0, 0.15);
     border-radius: 0px;
     border: var(--paper-border);
+
+    font: var(--mono-font);
+    font-size: 0.75rem;
 }
 
 #button_6 {
@@ -404,11 +407,12 @@ nav .nav-links a {
 /* Footer */
 footer {
     height: auto;
-    width: 60%;
+    width: 70%;
     max-width: var(--max-width);
     min-width: var(--min-width);
 
-    margin: 10px auto;
+    margin: 0 auto;
+    margin-top: 10px;
 
     padding-left: 0em;
     padding-right: 0em;
@@ -420,7 +424,7 @@ footer {
     color: var(--nav-text-color);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 25px;
+    column-gap: 10px;
     align-items: right; 
 
     align-self: center;
@@ -430,7 +434,7 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     text-align: center;
     /* color: var(--main-background) */
 }
