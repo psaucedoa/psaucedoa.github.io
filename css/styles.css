@@ -123,15 +123,8 @@ p {
 a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 1.5rem;
-}
-
-summary {
-    text-align: left;
-    flex-wrap: wrap;
     font-size: 1rem;
-    /* font-family: var(--mono-font); */
-    color: var(--text-color);
+    font-family: var(--body-font)
 }
 
 span {
@@ -170,11 +163,6 @@ button {
     font-size: 0.75rem;
 }
 
-#button_6 {
-    /* background-color: #ffbcbc; */
-    background-color: #729b76
-}
-
 #button_0 {
     background-color: #85ad89;
     /* background-color: #ffffff; */
@@ -203,6 +191,11 @@ button {
 #button_5 {
     background-color: #f1f8f1;
     /* background-color: #ffffff; */
+}
+
+#button_6 {
+    /* background-color: #ffbcbc; */
+    background-color: #ffffff
 }
 
 button:hover {
@@ -297,6 +290,17 @@ nav .nav-links a {
     font-style: italic;
 } */
 
+
+summary {
+    cursor: pointer; /* Show the hand cursor. */
+    padding-left: 4ch;
+    padding-bottom: 1ch;
+    /* text-align: left; */
+    /* flex-wrap: wrap; */
+    font-size: 1rem;
+    /* font-family: var(--mono-font); */
+    color: var(--text-color);
+}
 
 /* Default Sections */
 .default {
