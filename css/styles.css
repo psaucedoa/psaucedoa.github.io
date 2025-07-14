@@ -290,7 +290,6 @@ nav .nav-links a {
     font-style: italic;
 } */
 
-
 summary {
     cursor: pointer; /* Show the hand cursor. */
     padding-left: 4ch;
@@ -375,6 +374,20 @@ summary {
     padding-top: 1ch;
     padding-bottom: 0;
     /* text-indent: 4ch; */
+}
+
+
+#edit-tag{
+    text-align: right;
+    padding-bottom: 2ch;
+    font-size: 0.75em;
+
+}
+
+#footnote-tag {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 0.75em;
 }
 
 .default-image-border {
