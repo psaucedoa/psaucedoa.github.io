@@ -3,11 +3,11 @@
     font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1;
     
-    --primary-color: #faeed1;
-    --secondary-color: #faeed1;
+    --primary-color: #fdf6e3;
+    --secondary-color: #fdf6e3;
 
     --background: var(--primary-color);
-    --main-background: #fffce5;
+    --main-background: #fdf6e3;
     /* --main-background: #d0e7cd; */
 
     --logo-color: #333;
