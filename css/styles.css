@@ -15,6 +15,8 @@
 
     /* --logo-color: #5e8161; */
     --text-color: #333; /* Default text color */
+    --link-color: #bb9595; /* Link color */
+
     --nav-text-color: #333; /* Navigation text color */
     --hero-text-color: #ffffff; /* Navigation text color */
 
@@ -122,8 +124,8 @@ p {
 
 a {
     text-decoration: none;
-    color: var(--text-color);
-    font-size: 1rem;
+    color: var(--link-color);
+    font-size: 0.9rem;
     font-family: var(--body-font)
 }
 
