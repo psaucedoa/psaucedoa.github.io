@@ -313,6 +313,7 @@ i.footnote {
 
     box-sizing: border-box;
     /* box-shadow: 3px 3px rgba(0, 0, 0, 0.25); */
+    /* margin-bottom: -5px; */
 }
 
 .default-image.bordered {
