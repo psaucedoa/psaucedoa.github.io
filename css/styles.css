@@ -71,7 +71,13 @@ p {
     flex-wrap: wrap;
     font-size: 0.9rem;
     color: var(--text-color);
+}
 
+ul {
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: var(--text-color);
 }
 
 a {
