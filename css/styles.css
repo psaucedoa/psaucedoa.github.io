@@ -22,7 +22,7 @@
     --paper-shadow: 3px 3px 0px var(--main-shadow);
     --paper-min-width: 450px;
 
-    --max-width: 1700px;
+    --max-width: 700px;
     --min-width: 450px;
 
     --heading-font: 'Inter';
@@ -146,7 +146,7 @@ button:hover {
 nav {
     background-color: var(--main-background);
 
-    width: 80%;
+    width: 70%;
     min-width: var(--min-width);
     max-width: var(--max-width);
     
@@ -262,7 +262,7 @@ summary {
 
 .default-container {
     background-color: #ffffff;
-    width: 80%;
+    width: 70%;
     max-width: var(--max-width);
     min-width: var(--min-width);
     height: auto;
